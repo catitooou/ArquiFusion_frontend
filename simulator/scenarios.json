@@ -1,0 +1,30 @@
+{
+  "normal": {
+    "description": "Todas las máquinas operan dentro de su línea base normal.",
+    "targets": []
+  },
+  "falla_motor": {
+    "description": "EXC-014 deriva progresivamente en temperatura, vibración y combustible sin cambio de carga.",
+    "targets": ["EXC-014"],
+    "driftPerMin": {
+      "temp": 0.8,
+      "vibration": 0.12,
+      "fuel_lph": 0.15
+    }
+  },
+  "falla_zona_norte": {
+    "description": "Tres máquinas de ZONA-NORTE derivan simultáneamente para activar detección de causa común.",
+    "targets": ["EXC-014", "CAM-003", "CAR-005"],
+    "driftPerMin": {
+      "fuel_lph": 0.6,
+      "temp": 0.5
+    }
+  },
+  "falla_hidraulica": {
+    "description": "La presión hidráulica de EXC-002 cae de forma progresiva.",
+    "targets": ["EXC-002"],
+    "driftPerMin": {
+      "pressure": -3.5
+    }
+  }
+}

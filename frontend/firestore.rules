@@ -1,0 +1,21 @@
+rules_version = '2';
+// Sección 9.1: lectura solo para autenticados; sin escrituras del cliente,
+// salvo su propio users/{uid} sin poder cambiar el campo role.
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /users/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow update: if request.auth != null && request.auth.uid == uid
+        && request.resource.data.role == resource.data.role;
+    }
+    match /machines/{id} {
+      allow read: if request.auth != null;
+    }
+    match /incidents/{id} {
+      allow read: if request.auth != null;
+    }
+    match /alerts/{id} {
+      allow read: if request.auth != null;
+    }
+  }
+}

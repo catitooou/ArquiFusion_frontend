@@ -1,0 +1,8 @@
+{
+  "incidentId": "INC-20261114-0002",
+  "role": "tecnico",
+  "severity": "alta",
+  "machineId": "CAM-007",
+  "title": "Incidente hidráulico en CAM-007",
+  "message": "CAM-007 (ZONA-SUR): presión 124.6 bar vs 160 base. Lleva sello hidráulico; manguera sin stock en almacén central."
+}

@@ -1,0 +1,160 @@
+@import 'tailwindcss';
+@import 'leaflet/dist/leaflet.css';
+
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-slate-100 text-slate-900 antialiased;
+}
+
+/* Modal nativo: evita que el scroll pase a la página de fondo */
+dialog:modal {
+  overscroll-behavior: contain;
+}
+dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
+/* Región de toasts (popover="manual" en el top layer) */
+.toast-region {
+  position: fixed;
+  inset: auto 1rem 1rem auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  overflow: visible;
+  width: min(24rem, calc(100vw - 2rem));
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  pointer-events: none;
+  z-index: 2000; /* solo aplica en el fallback sin popover */
+}
+.toast-region[popover]:not(:popover-open) {
+  display: none;
+}
+
+.toast {
+  animation: toast-in 220ms ease-out;
+}
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .toast {
+    animation: none;
+  }
+}
+
+/* Marcadores pulsantes para riesgo alto en el mapa */
+.pulse-marker {
+  animation: pulse 1.6s ease-out infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+@keyframes pulse {
+  0% {
+    stroke-opacity: 0.9;
+    stroke-width: 2;
+  }
+  100% {
+    stroke-opacity: 0;
+    stroke-width: 18;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pulse-marker {
+    animation: none;
+  }
+}
+
+.leaflet-container {
+  font: inherit;
+}
+
+/* Tabla responsiva con encabezados sticky y tarjetas apiladas en contenedores estrechos */
+.responsive-table-wrap {
+  overflow: auto;
+  max-inline-size: 100%;
+  max-block-size: min(540px, 75vh);
+  container-type: inline-size;
+}
+.responsive-table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+.responsive-table thead {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: 2;
+}
+.responsive-table tbody th {
+  position: sticky;
+  inset-inline-start: 0;
+  z-index: 1;
+  background-color: #ffffff;
+}
+.responsive-table tbody tr:hover th {
+  background-color: #f8fafc;
+}
+@container (width < 600px) {
+  .maint-table,
+  .maint-table thead,
+  .maint-table tbody,
+  .maint-table tr,
+  .maint-table th,
+  .maint-table td {
+    display: block;
+  }
+  .maint-table thead {
+    display: none;
+  }
+  .maint-table tbody tr {
+    margin-block-end: 0.75rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background: #ffffff;
+  }
+  .maint-table tbody th {
+    position: sticky;
+    inset-block-start: 0;
+    z-index: 3;
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .maint-table {
+    --label-2: 'Modelo / Zona';
+    --label-3: 'Estado operativo';
+    --label-4: 'Horas acumuladas';
+    --label-5: 'Horas restantes';
+    --label-6: 'Riesgo';
+    --label-7: 'Mantenimiento';
+  }
+  .maint-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: right;
+  }
+  .maint-table td:nth-child(2)::before { content: var(--label-2) ': '; font-weight: 600; color: #64748b; }
+  .maint-table td:nth-child(3)::before { content: var(--label-3) ': '; font-weight: 600; color: #64748b; }
+  .maint-table td:nth-child(4)::before { content: var(--label-4) ': '; font-weight: 600; color: #64748b; }
+  .maint-table td:nth-child(5)::before { content: var(--label-5) ': '; font-weight: 600; color: #64748b; }
+  .maint-table td:nth-child(6)::before { content: var(--label-6) ': '; font-weight: 600; color: #64748b; }
+  .maint-table td:nth-child(7)::before { content: var(--label-7) ': '; font-weight: 600; color: #64748b; }
+}

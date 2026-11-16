@@ -1,0 +1,152 @@
+[
+  {
+    "machineId": "EXC-014",
+    "model": "EX-320",
+    "zone": "ZONA-NORTE",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 1686,
+    "fuelSum": 142,
+    "utilization": 0.585
+  },
+  {
+    "machineId": "CAM-003",
+    "model": "CT-740",
+    "zone": "ZONA-NORTE",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 2093,
+    "fuelSum": 315,
+    "utilization": 0.727
+  },
+  {
+    "machineId": "CAR-005",
+    "model": "CG-210",
+    "zone": "ZONA-NORTE",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 2715,
+    "fuelSum": 170,
+    "utilization": 0.943
+  },
+  {
+    "machineId": "EXC-021",
+    "model": "EX-320",
+    "zone": "ZONA-NORTE",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 2700,
+    "fuelSum": 212,
+    "utilization": 0.938
+  },
+  {
+    "machineId": "CAM-009",
+    "model": "CT-740",
+    "zone": "ZONA-NORTE",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 2050,
+    "fuelSum": 308,
+    "utilization": 0.712
+  },
+  {
+    "machineId": "EXC-002",
+    "model": "EX-320",
+    "zone": "ZONA-SUR",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 1965,
+    "fuelSum": 154,
+    "utilization": 0.682
+  },
+  {
+    "machineId": "CAM-007",
+    "model": "CT-740",
+    "zone": "ZONA-SUR",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 2725,
+    "fuelSum": 410,
+    "utilization": 0.946
+  },
+  {
+    "machineId": "CAR-011",
+    "model": "CG-210",
+    "zone": "ZONA-SUR",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 2502,
+    "fuelSum": 152,
+    "utilization": 0.869
+  },
+  {
+    "machineId": "CAR-016",
+    "model": "CG-210",
+    "zone": "ZONA-SUR",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 346,
+    "fuelSum": 21,
+    "utilization": 0.12
+  },
+  {
+    "machineId": "EXC-030",
+    "model": "EX-320",
+    "zone": "ZONA-SUR",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 2015,
+    "fuelSum": 156,
+    "utilization": 0.7
+  },
+  {
+    "machineId": "EXC-008",
+    "model": "EX-320",
+    "zone": "ZONA-ESTE",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 1938,
+    "fuelSum": 187,
+    "utilization": 0.673
+  },
+  {
+    "machineId": "CAM-012",
+    "model": "CT-740",
+    "zone": "ZONA-ESTE",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 1666,
+    "fuelSum": 253,
+    "utilization": 0.578
+  },
+  {
+    "machineId": "CAR-001",
+    "model": "CG-210",
+    "zone": "ZONA-ESTE",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 2655,
+    "fuelSum": 159,
+    "utilization": 0.922
+  },
+  {
+    "machineId": "CAM-018",
+    "model": "CT-740",
+    "zone": "ZONA-ESTE",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 144,
+    "fuelSum": 22,
+    "utilization": 0.05
+  },
+  {
+    "machineId": "CAR-024",
+    "model": "CG-210",
+    "zone": "ZONA-ESTE",
+    "date": "2026-11-14",
+    "readings": 2880,
+    "activeReadings": 2308,
+    "fuelSum": 144,
+    "utilization": 0.801
+  }
+]

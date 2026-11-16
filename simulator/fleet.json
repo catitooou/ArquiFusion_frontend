@@ -1,0 +1,17 @@
+[
+  { "machineId": "EXC-014", "model": "EX-320", "zone": "ZONA-NORTE", "lat": -11.98972, "lng": -77.06572, "hours": 4049, "status": "operativa" },
+  { "machineId": "CAM-003", "model": "CT-740", "zone": "ZONA-NORTE", "lat": -11.96622, "lng": -77.04052, "hours": 2414, "status": "operativa" },
+  { "machineId": "CAR-005", "model": "CG-210", "zone": "ZONA-NORTE", "lat": -11.97845, "lng": -77.05214, "hours": 3180, "status": "operativa" },
+  { "machineId": "EXC-021", "model": "EX-320", "zone": "ZONA-NORTE", "lat": -11.99110, "lng": -77.03980, "hours": 2890, "status": "operativa" },
+  { "machineId": "CAM-009", "model": "CT-740", "zone": "ZONA-NORTE", "lat": -11.97230, "lng": -77.06120, "hours": 4120, "status": "operativa" },
+  { "machineId": "EXC-002", "model": "EX-320", "zone": "ZONA-SUR",   "lat": -12.11850, "lng": -77.02810, "hours": 3510, "status": "operativa" },
+  { "machineId": "CAM-007", "model": "CT-740", "zone": "ZONA-SUR",   "lat": -12.12940, "lng": -77.03420, "hours": 4720, "status": "operativa" },
+  { "machineId": "CAR-011", "model": "CG-210", "zone": "ZONA-SUR",   "lat": -12.11320, "lng": -77.04150, "hours": 2650, "status": "operativa" },
+  { "machineId": "CAR-016", "model": "CG-210", "zone": "ZONA-SUR",   "lat": -12.12610, "lng": -77.01890, "hours": 3910, "status": "mantenimiento" },
+  { "machineId": "EXC-030", "model": "EX-320", "zone": "ZONA-SUR",   "lat": -12.10980, "lng": -77.02230, "hours": 2190, "status": "operativa" },
+  { "machineId": "EXC-008", "model": "EX-320", "zone": "ZONA-ESTE",  "lat": -12.04920, "lng": -76.95240, "hours": 3340, "status": "operativa" },
+  { "machineId": "CAM-012", "model": "CT-740", "zone": "ZONA-ESTE",  "lat": -12.05870, "lng": -76.94110, "hours": 4480, "status": "operativa" },
+  { "machineId": "CAR-001", "model": "CG-210", "zone": "ZONA-ESTE",  "lat": -12.04150, "lng": -76.96020, "hours": 2980, "status": "operativa" },
+  { "machineId": "CAM-018", "model": "CT-740", "zone": "ZONA-ESTE",  "lat": -12.06120, "lng": -76.95480, "hours": 5110, "status": "detenida" },
+  { "machineId": "CAR-024", "model": "CG-210", "zone": "ZONA-ESTE",  "lat": -12.04680, "lng": -76.93890, "hours": 3760, "status": "operativa" }
+]

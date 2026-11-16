@@ -1,0 +1,84 @@
+[
+  {
+    "techId": "TEC-01",
+    "name": "Luis Ramírez",
+    "zone": "ZONA-NORTE",
+    "specialty": [
+      "motor",
+      "electrico"
+    ],
+    "experienceYears": 8,
+    "activeIncidents": 0,
+    "available": true,
+    "lat": -11.98779,
+    "lng": -77.04358
+  },
+  {
+    "techId": "TEC-02",
+    "name": "María Quispe",
+    "zone": "ZONA-NORTE",
+    "specialty": [
+      "hidraulico"
+    ],
+    "experienceYears": 5,
+    "activeIncidents": 0,
+    "available": true,
+    "lat": -11.97127,
+    "lng": -77.03038
+  },
+  {
+    "techId": "TEC-03",
+    "name": "Jorge Huamán",
+    "zone": "ZONA-SUR",
+    "specialty": [
+      "hidraulico",
+      "combustible"
+    ],
+    "experienceYears": 11,
+    "activeIncidents": 1,
+    "available": true,
+    "lat": -12.13885,
+    "lng": -77.021
+  },
+  {
+    "techId": "TEC-04",
+    "name": "Ana Torres",
+    "zone": "ZONA-SUR",
+    "specialty": [
+      "motor"
+    ],
+    "experienceYears": 3,
+    "activeIncidents": 0,
+    "available": true,
+    "lat": -12.09517,
+    "lng": -77.00622
+  },
+  {
+    "techId": "TEC-05",
+    "name": "Carlos Mendoza",
+    "zone": "ZONA-ESTE",
+    "specialty": [
+      "electrico",
+      "combustible"
+    ],
+    "experienceYears": 6,
+    "activeIncidents": 2,
+    "available": false,
+    "lat": -12.06848,
+    "lng": -76.95654
+  },
+  {
+    "techId": "TEC-06",
+    "name": "Rosa Paredes",
+    "zone": "ZONA-ESTE",
+    "specialty": [
+      "motor",
+      "hidraulico"
+    ],
+    "experienceYears": 9,
+    "activeIncidents": 0,
+    "available": true,
+    "lat": -12.07298,
+    "lng": -76.94786
+  }
+]

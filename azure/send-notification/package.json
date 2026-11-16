@@ -1,0 +1,6 @@
+{
+  "name": "arquiguard-azure-notifications",
+  "version": "1.0.0",
+  "description": "Azure Function HTTP trigger para notificaciones por rol de ArquiGuard (sección 9.2)",
+  "dependencies": {}
+}

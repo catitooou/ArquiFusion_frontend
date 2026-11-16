@@ -1,0 +1,123 @@
+[
+  {
+    "partId": "P-FIL-ACE",
+    "locationId": "ALM-CENTRAL",
+    "name": "Filtro de aceite",
+    "faultType": "motor",
+    "stock": 18,
+    "minStock": 6,
+    "unitCost": 45,
+    "consumption7d": 5,
+    "irregular": false
+  },
+  {
+    "partId": "P-ROD-MOT",
+    "locationId": "ALM-CENTRAL",
+    "name": "Rodamiento de motor",
+    "faultType": "motor",
+    "stock": 4,
+    "minStock": 3,
+    "unitCost": 320,
+    "consumption7d": 9,
+    "irregular": false
+  },
+  {
+    "partId": "P-SEN-TMP",
+    "locationId": "ALM-CENTRAL",
+    "name": "Sensor de temperatura",
+    "faultType": "motor",
+    "stock": 7,
+    "minStock": 3,
+    "unitCost": 85,
+    "consumption7d": 6,
+    "irregular": false
+  },
+  {
+    "partId": "P-MAN-HID",
+    "locationId": "ALM-CENTRAL",
+    "name": "Manguera hidráulica",
+    "faultType": "hidraulico",
+    "stock": 2,
+    "minStock": 4,
+    "unitCost": 140,
+    "consumption7d": 9,
+    "irregular": false
+  },
+  {
+    "partId": "P-SEL-HID",
+    "locationId": "ALM-CENTRAL",
+    "name": "Sello hidráulico",
+    "faultType": "hidraulico",
+    "stock": 12,
+    "minStock": 5,
+    "unitCost": 30,
+    "consumption7d": 4,
+    "irregular": false
+  },
+  {
+    "partId": "P-BOM-HID",
+    "locationId": "ALM-CENTRAL",
+    "name": "Bomba hidráulica",
+    "faultType": "hidraulico",
+    "stock": 1,
+    "minStock": 2,
+    "unitCost": 1450,
+    "consumption7d": 7,
+    "irregular": false
+  },
+  {
+    "partId": "P-INY",
+    "locationId": "ALM-CENTRAL",
+    "name": "Inyector",
+    "faultType": "combustible",
+    "stock": 9,
+    "minStock": 4,
+    "unitCost": 260,
+    "consumption7d": 10,
+    "irregular": false
+  },
+  {
+    "partId": "P-FIL-COM",
+    "locationId": "ALM-CENTRAL",
+    "name": "Filtro de combustible",
+    "faultType": "combustible",
+    "stock": 22,
+    "minStock": 8,
+    "unitCost": 38,
+    "consumption7d": 17,
+    "irregular": true
+  },
+  {
+    "partId": "P-SEN-RPM",
+    "locationId": "ALM-CENTRAL",
+    "name": "Sensor de rpm",
+    "faultType": "electrico",
+    "stock": 5,
+    "minStock": 2,
+    "unitCost": 95,
+    "consumption7d": 11,
+    "irregular": false
+  },
+  {
+    "partId": "P-ALT",
+    "locationId": "ALM-CENTRAL",
+    "name": "Alternador",
+    "faultType": "electrico",
+    "stock": 3,
+    "minStock": 2,
+    "unitCost": 780,
+    "consumption7d": 5,
+    "irregular": false
+  },
+  {
+    "partId": "P-KIT-INS",
+    "locationId": "ALM-CENTRAL",
+    "name": "Kit de inspección",
+    "faultType": "general",
+    "stock": 10,
+    "minStock": 3,
+    "unitCost": 60,
+    "consumption7d": 9,
+    "irregular": false
+  }
+]

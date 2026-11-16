@@ -1,0 +1,52 @@
+{
+  "ok": true,
+  "data": {
+    "incidentId": "INC-20261114-0002",
+    "type": "individual",
+    "machineIds": ["CAM-007"],
+    "zone": "ZONA-SUR",
+    "severity": "alta",
+    "status": "en_atencion",
+    "riskScore": 78,
+    "faultType": "hidraulico",
+    "variables": [
+      {
+        "name": "pressure",
+        "value": 124.6,
+        "baseline": 160,
+        "z": -5.1,
+        "peerDeviation": true
+      }
+    ],
+    "createdAt": "2026-11-14T20:18:00Z",
+    "resolvedAt": null,
+    "downtimeMin": null,
+    "technicianId": "TEC-03",
+    "etaMin": 18,
+    "partsUsed": ["P-SEL-HID"],
+    "partsMissing": ["P-MAN-HID"],
+    "aiDiagnosis": {
+      "diagnostico_probable": "Fuga en el circuito hidráulico principal.",
+      "acciones_recomendadas": [
+        "Detener el levante de tolva",
+        "Inspeccionar mangueras de alta presión"
+      ],
+      "repuestos_sugeridos": ["Manguera hidráulica", "Sello hidráulico"]
+    },
+    "messages": {
+      "operador": "CAM-007: baja presión hidráulica. Detén el levante de tolva.",
+      "tecnico": "CAM-007 (ZONA-SUR): presión 124.6 bar vs 160 base. Lleva sello hidráulico.",
+      "gerente": "Riesgo ALTO en CAM-007 (ZONA-SUR). Falta stock de manguera hidráulica."
+    },
+    "timeline": [
+      {
+        "ts": "2026-11-14T20:18:00Z",
+        "type": "creado",
+        "text": "Anomalía detectada (riesgo 78). Incidente creado."
+      }
+    ],
+    "isRecurrence": false,
+    "commonCauseId": null
+  },
+  "error": null
+}

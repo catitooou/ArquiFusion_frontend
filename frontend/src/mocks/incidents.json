@@ -1,0 +1,210 @@
+[
+  {
+    "incidentId": "INC-20261114-0002",
+    "type": "individual",
+    "machineIds": [
+      "CAM-007"
+    ],
+    "zone": "ZONA-SUR",
+    "severity": "alta",
+    "status": "en_atencion",
+    "riskScore": 78,
+    "faultType": "hidraulico",
+    "variables": [
+      {
+        "name": "pressure",
+        "value": 124.6,
+        "baseline": 160,
+        "z": -5.1,
+        "peerDeviation": true
+      },
+      {
+        "name": "temp",
+        "value": 93.2,
+        "baseline": 88,
+        "z": 2.2,
+        "peerDeviation": false
+      }
+    ],
+    "createdAt": "2026-11-14T20:18:00Z",
+    "resolvedAt": null,
+    "downtimeMin": null,
+    "technicianId": "TEC-03",
+    "etaMin": 18,
+    "partsUsed": [
+      "P-SEL-HID"
+    ],
+    "partsMissing": [
+      "P-MAN-HID"
+    ],
+    "aiDiagnosis": {
+      "diagnostico_probable": "Fuga en el circuito hidráulico principal: la presión cayó 22% respecto a su línea base y a sus pares CT-740.",
+      "acciones_recomendadas": [
+        "Detener el levante de tolva",
+        "Inspeccionar mangueras de alta presión",
+        "Revisar sellos del cilindro principal"
+      ],
+      "repuestos_sugeridos": [
+        "Manguera hidráulica",
+        "Sello hidráulico"
+      ]
+    },
+    "messages": {
+      "operador": "CAM-007: baja presión hidráulica. Detén el levante de tolva y espera al técnico (ETA 18 min).",
+      "tecnico": "CAM-007 (ZONA-SUR): presión 124.6 bar vs 160 base. Probable fuga en manguera de alta. Lleva sello hidráulico; manguera sin stock en almacén central.",
+      "gerente": "Riesgo ALTO en CAM-007 (camión, ZONA-SUR). Parada estimada 2 h. Falta stock de manguera hidráulica: se recomienda reposición urgente."
+    },
+    "timeline": [
+      {
+        "ts": "2026-11-14T20:18:00Z",
+        "type": "creado",
+        "text": "Anomalía detectada (riesgo 78). Incidente creado."
+      },
+      {
+        "ts": "2026-11-14T20:18:30Z",
+        "type": "diagnostico",
+        "text": "Diagnóstico IA: fuga en circuito hidráulico."
+      },
+      {
+        "ts": "2026-11-14T20:19:00Z",
+        "type": "tecnico_asignado",
+        "text": "Asignado Jorge Huamán (ETA 18 min)."
+      },
+      {
+        "ts": "2026-11-14T20:19:00Z",
+        "type": "repuestos",
+        "text": "Sello hidráulico reservado. Falta manguera hidráulica."
+      },
+      {
+        "ts": "2026-11-14T20:19:30Z",
+        "type": "notificado",
+        "text": "Notificados operador, técnico y gerente."
+      }
+    ],
+    "isRecurrence": false,
+    "commonCauseId": null
+  },
+  {
+    "incidentId": "INC-20261110-0007",
+    "type": "individual",
+    "machineIds": [
+      "EXC-014"
+    ],
+    "zone": "ZONA-NORTE",
+    "severity": "media",
+    "status": "resuelto",
+    "riskScore": 66,
+    "faultType": "motor",
+    "variables": [
+      {
+        "name": "temp",
+        "value": 101.3,
+        "baseline": 85,
+        "z": 3.9,
+        "peerDeviation": true
+      }
+    ],
+    "createdAt": "2026-11-10T14:12:00Z",
+    "resolvedAt": "2026-11-10T16:02:00Z",
+    "downtimeMin": 110,
+    "technicianId": "TEC-01",
+    "etaMin": 14,
+    "partsUsed": [
+      "P-SEN-TMP"
+    ],
+    "partsMissing": [],
+    "aiDiagnosis": {
+      "diagnostico_probable": "Sobrecalentamiento del motor por sensor de temperatura defectuoso y radiador obstruido.",
+      "acciones_recomendadas": [
+        "Cambiar sensor de temperatura",
+        "Limpiar radiador"
+      ],
+      "repuestos_sugeridos": [
+        "Sensor de temperatura"
+      ]
+    },
+    "messages": {
+      "operador": "EXC-014: temperatura alta. Reduce carga.",
+      "tecnico": "EXC-014: revisar sensor de temperatura y radiador.",
+      "gerente": "Riesgo medio en EXC-014."
+    },
+    "timeline": [
+      {
+        "ts": "2026-11-10T14:12:00Z",
+        "type": "creado",
+        "text": "Anomalía detectada (riesgo 66)."
+      },
+      {
+        "ts": "2026-11-10T14:13:00Z",
+        "type": "tecnico_asignado",
+        "text": "Asignado Luis Ramírez (ETA 14 min)."
+      },
+      {
+        "ts": "2026-11-10T16:02:00Z",
+        "type": "resuelto",
+        "text": "Resuelto por Luis Ramírez. Parada: 110 min."
+      }
+    ],
+    "isRecurrence": false,
+    "commonCauseId": null
+  },
+  {
+    "incidentId": "INC-20261112-0003",
+    "type": "individual",
+    "machineIds": [
+      "CAR-011"
+    ],
+    "zone": "ZONA-SUR",
+    "severity": "media",
+    "status": "resuelto",
+    "riskScore": 63,
+    "faultType": "combustible",
+    "variables": [
+      {
+        "name": "fuel_lph",
+        "value": 29.4,
+        "baseline": 22,
+        "z": 3.4,
+        "peerDeviation": true
+      }
+    ],
+    "createdAt": "2026-11-12T09:40:00Z",
+    "resolvedAt": "2026-11-12T10:55:00Z",
+    "downtimeMin": 75,
+    "technicianId": "TEC-03",
+    "etaMin": 11,
+    "partsUsed": [
+      "P-FIL-COM"
+    ],
+    "partsMissing": [],
+    "aiDiagnosis": {
+      "diagnostico_probable": "Consumo de combustible 34% sobre sus pares sin aumento de carga: filtro de combustible saturado.",
+      "acciones_recomendadas": [
+        "Cambiar filtro de combustible",
+        "Revisar inyectores"
+      ],
+      "repuestos_sugeridos": [
+        "Filtro de combustible"
+      ]
+    },
+    "messages": {
+      "operador": "CAR-011: consumo alto.",
+      "tecnico": "CAR-011: cambiar filtro de combustible.",
+      "gerente": "Riesgo medio en CAR-011."
+    },
+    "timeline": [
+      {
+        "ts": "2026-11-12T09:40:00Z",
+        "type": "creado",
+        "text": "Anomalía detectada (riesgo 63)."
+      },
+      {
+        "ts": "2026-11-12T10:55:00Z",
+        "type": "resuelto",
+        "text": "Resuelto. Parada: 75 min."
+      }
+    ],
+    "isRecurrence": false,
+    "commonCauseId": null
+  }
+]

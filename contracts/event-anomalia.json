@@ -1,0 +1,14 @@
+{
+  "bus": "arquifusion",
+  "source": "arquifusion.analitica",
+  "detail-type": "AnomaliaDetectada",
+  "detail": {
+    "machineIds": ["EXC-014"],
+    "zone": "ZONA-NORTE",
+    "riskScore": 74,
+    "severity": "media",
+    "faultType": "motor",
+    "variables": ["temp", "vibration", "fuel_lph"],
+    "groupId": null
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "machineId": "EXC-014",
+  "model": "EX-320",
+  "zone": "ZONA-NORTE",
+  "ts": "2026-11-14T15:04:05Z",
+  "lat": -11.98972,
+  "lng": -77.06572,
+  "hours": 4521.3,
+  "temp": 96.4,
+  "vibration": 7.8,
+  "pressure": 182,
+  "fuel_lph": 38.2,
+  "load_kg": 12400,
+  "speed_kmh": 8.1,
+  "rpm": 1850,
+  "status": "operativa"
+}
