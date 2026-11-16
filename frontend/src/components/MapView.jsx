@@ -101,8 +101,8 @@ export function MapView({ machines = [], selectedId, highlightIds = [], onSelect
     <div className={`relative isolate overflow-hidden ${className}`}>
       <MapContainer center={MAP_CENTER} zoom={11} className="size-full" scrollWheelZoom>
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>'
-          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <InvalidateOnResize />
         <FlyTo target={selected} />

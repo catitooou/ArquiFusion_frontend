@@ -120,7 +120,7 @@ export function Manager() {
   if (machinesError) return <ErrorState error={machinesError} onRetry={refetch} />;
 
   return (
-    <div className="flex h-full flex-col gap-3 p-3 sm:p-4">
+    <div className="flex min-h-full flex-col gap-3 p-3 sm:p-4 lg:h-full">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <div>
           <h1 className="text-lg font-bold text-slate-900">Centro de Control de Operaciones</h1>
@@ -180,7 +180,7 @@ export function Manager() {
       <div className="grid min-h-0 flex-1 grid-cols-1 gap-3 lg:grid-cols-12">
         {/* Panel Izquierdo: Incidentes / Máquinas */}
         <Card
-          className="lg:col-span-3"
+          className="min-h-80 max-h-96 lg:col-span-3 lg:max-h-none"
           bodyClassName="flex min-h-0 flex-col p-0"
           title={
             <span className="flex gap-1" role="tablist" aria-label="Listas de monitoreo">
@@ -334,7 +334,7 @@ export function Manager() {
 
         {/* Panel Derecho: Detalle del Incidente / Máquina / Asistente IA */}
         <Card
-          className="lg:col-span-4"
+          className="min-h-80 lg:col-span-4"
           bodyClassName="min-h-0 flex-1 overflow-y-auto p-4"
           title={
             <span className="flex gap-1" role="tablist" aria-label="Panel de detalle">

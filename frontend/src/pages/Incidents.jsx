@@ -39,7 +39,7 @@ export function Incidents() {
   if (error) return <ErrorState error={error} onRetry={refetch} />;
 
   return (
-    <div className="flex h-full flex-col gap-3 p-3 sm:p-4">
+    <div className="flex min-h-full flex-col gap-3 p-3 sm:p-4 lg:h-full">
       <div className="flex flex-wrap items-center justify-between gap-2">
         <div>
           <h1 className="text-lg font-bold text-slate-900">Historial y Gestión de Incidentes</h1>
@@ -85,7 +85,7 @@ export function Incidents() {
       <div className="grid min-h-0 flex-1 grid-cols-1 gap-3 lg:grid-cols-12">
         <Card
           title={`Incidentes (${filtered.length})`}
-          className="lg:col-span-4"
+          className="min-h-72 max-h-96 lg:col-span-4 lg:max-h-none"
           bodyClassName="min-h-0 flex-1 overflow-y-auto p-0"
         >
           {filtered.length ? (
@@ -102,7 +102,7 @@ export function Incidents() {
 
         <Card
           title={selected ? `Detalle · ${selected.incidentId}` : 'Detalle'}
-          className="lg:col-span-8"
+          className="min-h-80 lg:col-span-8"
           bodyClassName="min-h-0 flex-1 overflow-y-auto p-4 sm:p-5"
         >
           {selected ? (
